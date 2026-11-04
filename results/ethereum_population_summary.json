@@ -1,0 +1,289 @@
+{
+ "allow_missing_factory": false,
+ "census": {
+  "creations": 1140805,
+  "deployers": 315090,
+  "failed_attempts_excluded": 11025,
+  "succeeded": 1129780
+ },
+ "destinations": {
+  "by_kind": {
+   "kind": [
+    "known_pool",
+    "private_executor",
+    "protocol_contract",
+    "shared_destination"
+   ],
+   "mev_txs": [
+    6213,
+    3893771,
+    67,
+    1271580
+   ],
+   "n": [
+    93,
+    4503,
+    2,
+    1467
+   ]
+  },
+  "creation_transactions_without_destination": 12850,
+  "rule": {
+   "known_pools": 274529,
+   "max_senders_all_swaps": 3,
+   "protocol_contracts": 16
+  },
+  "total": 6065
+ },
+ "entrant_rule": {
+  "max_senders": 3,
+  "min_transactions": 10
+ },
+ "events": {
+  "by_channel": {
+   "channel": [
+    "factory",
+    "top_level"
+   ],
+   "len": [
+    476068,
+    1129780
+   ]
+  },
+  "by_role": {
+   "len": [
+    12850,
+    1539455,
+    50651,
+    2892
+   ],
+   "role": [
+    "ephemeral_trade",
+    "other",
+    "traded_later",
+    "validated_executor"
+   ]
+  },
+  "factory_rows_available": 476068,
+  "persistent_but_traded_in_creation": 0,
+  "total": 1605848,
+  "traded_in_creation": 12850
+ },
+ "executors": {
+  "by_channel": {
+   "channel": [
+    null,
+    "eip7702_delegation",
+    "factory",
+    "top_level"
+   ],
+   "len": [
+    3,
+    1375,
+    161,
+    2964
+   ]
+  },
+  "by_source": {
+   "len": [
+    2782,
+    1375,
+    233,
+    110,
+    3
+   ],
+   "source": [
+    "census",
+    "eip7702_account",
+    "etherscan",
+    "factory_trace",
+    "unresolved"
+   ]
+  },
+  "private": 4503
+ },
+ "generator": "analysis/mev_population.py",
+ "generator_sha256": "3729f9e66cd8378263021810ee2d5d4d1083ed6f1e39bd6d8630061fc552a7e1",
+ "inputs_sha256": {
+  "data/ethereum_full/chain_creation_census/creations.parquet": "5132144523e09f68be432165b52057d44a62a545bcea3abe56fdecf430dd9b19",
+  "data/ethereum_full/contract_creators.parquet": "30589045f080bfa9ee0135b74127c3bdf8fab8bd478545b10c25c461bba6d394",
+  "data/ethereum_full/factory_creations.parquet": "2429c8f8b9f22bbb09e57e51710ddd3d27c405c8f068e8ef51cdb5b8d9a223ef",
+  "data/ethereum_full/known_pool_addresses.txt": "0ce3f0d4a110aaf83fb0430239773548824a1eb3d12d3e295c24a7fd0c10179e",
+  "data/ethereum_full/protocol_deployment_addresses.txt": "5eb23922b54e26fbf232effef5da0e2087032901006da0bf43c69bba1074fae2",
+  "data/ethereum_full/swap_tx_destinations/contracts.parquet": "5cdc78af50b03621ba4c0d444c95c34049f23016e5072b292792fa2a4c4726c6",
+  "data/ethereum_full/swap_tx_destinations/mev_tx_destinations.parquet": "6117003229aa61ac48c775c23fcc45b92cf31bf486d4f6faad37731cb0e841af",
+  "results/chain_creation_census/receipt.json": "f989c16ddd3c417dc5a84658936c4ea2f1abb813b55058fac9a79109e2974eb9",
+  "results/swap_tx_destinations/tiling.json": "452b0d84a78104a05ab2b23c5a81c9255397c81b2897aece8439f7bb0b7ce078"
+ },
+ "overlaps": {
+  "executor_deployers&incumbents_2025": 257,
+  "executor_deployers&mev_deployers": 2806,
+  "executor_deployers&private_executor_deployers": 919,
+  "executor_deployers&single_sender_executor_deployers": 693,
+  "executor_deployers&trading_contract_deployers_any": 1287,
+  "executor_deployers&verified_senders": 2325,
+  "incumbents_2025&mev_deployers": 1420,
+  "incumbents_2025&private_executor_deployers": 121,
+  "incumbents_2025&single_sender_executor_deployers": 110,
+  "incumbents_2025&trading_contract_deployers_any": 167,
+  "incumbents_2025&verified_senders": 1359,
+  "mev_deployers&private_executor_deployers": 937,
+  "mev_deployers&single_sender_executor_deployers": 706,
+  "mev_deployers&trading_contract_deployers_any": 1449,
+  "mev_deployers&verified_senders": 8516,
+  "private_executor_deployers&single_sender_executor_deployers": 2387,
+  "private_executor_deployers&trading_contract_deployers_any": 3054,
+  "private_executor_deployers&verified_senders": 624,
+  "single_sender_executor_deployers&trading_contract_deployers_any": 2387,
+  "single_sender_executor_deployers&verified_senders": 505,
+  "trading_contract_deployers_any&verified_senders": 1031
+ },
+ "panel_start_block": 21525891,
+ "population_roles": {
+  "executor_deployers": {
+   "len": [
+    6891,
+    91310,
+    7295,
+    2892
+   ],
+   "role": [
+    "ephemeral_trade",
+    "other",
+    "traded_later",
+    "validated_executor"
+   ]
+  },
+  "incumbents_2025": {
+   "len": [
+    7345,
+    12278,
+    503,
+    419
+   ],
+   "role": [
+    "ephemeral_trade",
+    "other",
+    "traded_later",
+    "validated_executor"
+   ]
+  },
+  "mev_deployers": {
+   "len": [
+    12850,
+    127604,
+    8650,
+    2892
+   ],
+   "role": [
+    "ephemeral_trade",
+    "other",
+    "traded_later",
+    "validated_executor"
+   ]
+  },
+  "private_executor_deployers": {
+   "len": [
+    6889,
+    54312,
+    8336,
+    2280
+   ],
+   "role": [
+    "ephemeral_trade",
+    "other",
+    "traded_later",
+    "validated_executor"
+   ]
+  },
+  "single_sender_executor_deployers": {
+   "len": [
+    6126,
+    41775,
+    6966,
+    1971
+   ],
+   "role": [
+    "ephemeral_trade",
+    "other",
+    "traded_later",
+    "validated_executor"
+   ]
+  },
+  "trading_contract_deployers_any": {
+   "len": [
+    12589,
+    124923,
+    29382,
+    2797
+   ],
+   "role": [
+    "ephemeral_trade",
+    "other",
+    "traded_later",
+    "validated_executor"
+   ]
+  },
+  "verified_senders": {
+   "len": [
+    12850,
+    89614,
+    6095,
+    2251
+   ],
+   "role": [
+    "ephemeral_trade",
+    "other",
+    "traded_later",
+    "validated_executor"
+   ]
+  }
+ },
+ "populations": {
+  "executor_deployers": 2806,
+  "incumbents_2025": 1420,
+  "mev_deployers": 8997,
+  "private_executor_deployers": 3054,
+  "single_sender_executor_deployers": 2387,
+  "trading_contract_deployers_any": 18970,
+  "verified_senders": 8516
+ },
+ "tables": {
+  "deploy_and_trade": {
+   "path": "data/ethereum_full/populations/creations_census_deploy_and_trade.parquet",
+   "rows": 12850,
+   "senders": 29
+  },
+  "primary": {
+   "by_channel": {
+    "channel": [
+     "factory",
+     "top_level"
+    ],
+    "len": [
+     476035,
+     1116930
+    ]
+   },
+   "by_role": {
+    "len": [
+     1539422,
+     50651,
+     2892
+    ],
+    "role": [
+     "other",
+     "traded_later",
+     "validated_executor"
+    ]
+   },
+   "path": "data/ethereum_full/populations/creations_census.parquet",
+   "rows": 1592965
+  },
+  "validated_executor": {
+   "path": "data/ethereum_full/populations/creations_validated_executor.parquet",
+   "rows": 2892
+  }
+ },
+ "verified_senders_match_dose_panel_list": true
+}

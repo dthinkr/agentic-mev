@@ -1,0 +1,22 @@
+{
+  "chain": "base22",
+  "swap_tx": 1099593191,
+  "executors": 29120,
+  "executor_types": {
+    "arb": 16195,
+    "other": 12875,
+    "sandwich": 50
+  },
+  "sandwich_victims": 4708832,
+  "sandwich_attackers": 6953,
+  "operator_addresses": 21026,
+  "window_start": 1735689601,
+  "window_end": 1791849599,
+  "creations": 1088039,
+  "creations_becoming_executor": 21880,
+  "creations_by_operator": 1084091,
+  "executors_with_observed_creation": 21880,
+  "deploying_operators": 7102,
+  "toplevel_creations_by_operator": 93694,
+  "toplevel_deploying_operators": 2888
+}
